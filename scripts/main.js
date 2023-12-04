@@ -17,7 +17,7 @@ function estableceNombreUsuario() {
     estableceNombreUsuario();
   } else {
     localStorage.setItem('nombre', miNombre);
-    miTitulo.innerHTML = 'Aprender es genial, ' + miNombre;
+    miTitulo.innerHTML = 'Welcome, ' + miNombre;
   }
 }
 
@@ -27,7 +27,7 @@ if (!localStorage.getItem('nombre')) {
 }
 else {
     let nombreAlmacenado = localStorage.getItem('nombre');
-    miTitulo.textContent = 'Aprender es genial, ' + nombreAlmacenado;
+    miTitulo.textContent = 'Welcome, ' + nombreAlmacenado;
 }
 
 miBoton.onclick = function() {
